@@ -51,8 +51,6 @@ name填PAT，Value填入上方申请到的PAT,保存即可
 
 ### 配置环境变量
 
-创建github账号, **fork此仓库**或以此[仓库模板创建(推荐)](./wiki/importRepo.md), 仓库建立完成, 在**自己的仓库**内依次点击**settings->secrets->Actions**
-
 通过点击**New repository secret**, 分别添加:
 
 1. TENCENT_SECRET_ID: 进入[腾讯云密钥](https://console.cloud.tencent.com/cam/capi), 点击新建密钥后就会生成**SecretId**和**SecretKey**
