@@ -1,10 +1,47 @@
 # 部署打京豆
 
+
 ## 简介
 
 打京豆的脚本部署流程, 非脚本作者, 该仓库为使用说明, 每个月能打1500(不确定)左右, 如果你的计算机有安装Docker, 推荐使用[本地部署](#本地部署)方式, 没有就使用[腾讯云函数部署](#腾讯云函数部署), 不计划设计助力池.
 
+准备工作​：
+一个 Github 账号（可能需要fan qiang，推荐使用 HideU）
+一个 腾讯云 账号，并 实名认证
+
 ## 腾讯云函数部署
+Github准备
+1. 创建一个空Github库并进入 [点我创建](https://github.com/new)
+![image](https://user-images.githubusercontent.com/25003641/153543956-3720cd4f-e4b8-4ef7-90cb-9eca81693e85.png)
+
+2. 进入刚才创建的库，输入 https://github.com/bullfly666/percollect 等待代码同步
+![image](https://user-images.githubusercontent.com/25003641/153543998-dcf8ea32-dad2-47ee-b23a-e4b480e3cf97.png)
+![image](https://user-images.githubusercontent.com/25003641/153544052-9605b9b9-1079-4f87-b174-0a0a39c4fce5.png)
+![image](https://user-images.githubusercontent.com/25003641/153544090-07dc584a-eca4-49cc-bc42-460e7f7fec86.png)
+3. 申请PAT
+生成token连接[点我跳转](https://github.com/settings/tokens/new)
+把repo和workflow两部分勾上，然后点击最下面的创建按钮。
+![image](https://user-images.githubusercontent.com/25003641/153544389-5bed1854-7987-4f3c-a17f-a250a42bd1db.png)
+![image](https://user-images.githubusercontent.com/25003641/153544425-46e090cf-925c-4490-b22d-de13b9aa6801.png)
+![image](https://user-images.githubusercontent.com/25003641/153544663-7db8fa0d-d966-4919-a4a5-67b2f247c799.png)
+
+4. 填写PAT到Secrets 然后保存
+![image](https://user-images.githubusercontent.com/25003641/153544790-61734b4a-2822-4763-b9b0-de4a61de542d.png)
+![image](https://user-images.githubusercontent.com/25003641/153544890-5ee63800-d411-461e-a36b-95cbb4f4dbd1.png)
+name填PAT，Value填入上方申请到的PAT,保存即可
+![image](https://user-images.githubusercontent.com/25003641/153545002-b7d1a270-48d9-40f6-ae86-98752026905b.png)
+5. 同步仓库
+在刚刚创建的库中点击Actions，执行同步任务
+![image](https://user-images.githubusercontent.com/25003641/153545419-eee5f541-3a32-4f07-85d1-6413fb2e88ec.png)
+设置为主分支步骤
+![image](https://user-images.githubusercontent.com/25003641/153545646-5ba2ba86-ef73-49b1-ae2a-c9ccfa32dcdb.png)
+![image](https://user-images.githubusercontent.com/25003641/153545752-58ebf927-4c6f-44a2-8111-5f2e6df97e95.png)
+![image](https://user-images.githubusercontent.com/25003641/153545796-9a1b8617-77b1-46d3-a8e1-d72e84f8ee64.png)
+![image](https://user-images.githubusercontent.com/25003641/153545910-8824a500-47e1-48eb-a60c-6bfca20f2006.png)
+点下面执行相应的功能
+![image](https://user-images.githubusercontent.com/25003641/153546106-1f438b61-41cd-470a-b303-91e366bd352d.png)
+
+
 
 ### 开通云函数服务
 
